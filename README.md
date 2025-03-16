@@ -2,24 +2,24 @@
 
 ## Core Mechanics
 - Regions:
-  - Start with attack and defense level 0.
-  - If a region's defense drops to 0, it is immediately under attacker control.
+  - Start with attack and defense level `0`.
+  - If a region's defense drops to `0`, it is immediately under attacker control.
   - Defense value carries over to the next turn.
   - Coastal regions have sea borders (neutral nations can pass through; enemies must go around or attack).
   - Sea regions behave like land regions.
   
 - Combat:
   - If attack = defense, the defender wins, but the region is left defenseless.
-  - Multiple units can enter a region; attack value is additive (e.g., Army lvl5 + Navy lvl3 + AF lvl1 = attack lvl9).
+  - Multiple units can enter a region; attack value is additive (e.g., Army `lvl5` + Navy `lvl3` + AF `lvl1` = atk `lvl9`).
   
 - Unit Types:
   - Army
-	- Range: Near
+  	- Range: Near
   - Navy
-	- Range: Coast
-	- Can ferry Army (extends Army range)
+  	- Range: Coast
+  	- Can ferry Army (extends Army range)
   - Air Force
-	- Range: Far
+  	- Range: Far
 
 - Unit Production & Movement:
   - Unit production is a one-time purchase.
@@ -46,9 +46,9 @@
   
 - Upgrade Costs:
   - Attack/defense upgrades cost is linear.
-    - Level 1 → Level 2: $20k
-    - Level 2 → Level 3: $20k
-    - Level 1 → Level 3: $40k
+    - `Lvl1` → `Lvl2`: `$20k`
+    - `Lvl2` → `Lvl3`: `$20k`
+    - `Lvl1` → `Lvl3`: `$40k`
 
 ## AI Decision-Making
 - Reward Calculation:
@@ -66,5 +66,5 @@
   - The AI prioritizes attacking neighboring regions with the highest reward and lowest risk.
 
 ## Victory Condition
-- Victory is achieved by complete map domination (100% control of all regions).
+- Victory is achieved by complete map domination (`100%` control of all regions).
 - If a nation's capital is lost, the closest region to the center-of-mass of the country becomes the new capital.
